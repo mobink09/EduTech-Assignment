@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Design</title>
+    <script
+      src="https://kit.fontawesome.com/304490be0c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/simplelightbox.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/model.css"/>
+  </head>
+
+  <body id="home">
+    <!--Nav start-->
+    <nav class="navbar">
+      <div class="container">
+        <h2 class="logo">Design | Agency</h2>
+        <ul class="nav">
+          <li><a href="#about">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li>
+            <button
+              onclick="document.getElementById('id01').style.display='block'"
+              style="width: auto;"
+            >
+              Login
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Nav end-->
+
+    <!--Showcase-->
+    <section class="section-a" id="about">
+      <div class="container">
+        <div>
+          <h1>Design <span class="color-text">Agency</span></h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Reprehenderit, tempora
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <img src="image/design.svg" alt="designer boy" />
+      </div>
+    </section>
+
+    <!--Overlay-->
+    <section class="section-b">
+      <div class="overlay">
+        <div class="inner">
+          <h3>loves to Design with code</h3>
+          <h2>Lorem ipsum dolor sit amet</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            dolore harum iusto voluptatum optio. Exercitationem hic autem
+            explicabo
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-c" id="gallery">
+      <div class="gallery">
+        <a href="image/p1.png" class="big">
+          <img src="image/p1.png" alt="" />
+        </a>
+        <a href="image/p6.png" class="big">
+          <img src="image/p6.png" alt="" />
+        </a>
+        <a href="image/p5.png" class="big">
+          <img src="image/p5.png" alt="" />
+        </a>
+        <a href="image/p4.png" class="big">
+          <img src="image/p4.png" alt="" />
+        </a>
+        <a href="image/p2.png" class="big">
+          <img src="image/p2.png" alt="" />
+        </a>
+        <a href="image/p3.png" class="big">
+          <img src="image/p3.png" alt="" />
+        </a>
+      </div>
+    </section>
+    <!-- ******************************* model of login goes here ************************************************** -->
+
+    <div id="id01" class="modal">
+      <form
+        onsubmit="return validate()"
+        class="modal-content animate"
+        action="index.html"
+        method="post"
+       
+      >
+        <div class="imgcontainer">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+            >
+        </div>
+
+        <div class="container">
+         
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter Name"
+            name="uname"
+           
+          />
+          <br>
+          
+          <input
+            type="number"
+            placeholder="Enter Age"
+            
+            id="age"
+            
+          />
+          <br>
+          <input
+          type="number"
+          placeholder="Enter Mobile number"
+          id="mobile"
+         
+        />
+        <br>
+        <input
+          type="date"
+          placeholder="Enter DOB"
+          name="dob"
+         
+        />
+        <br>
+         <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label><br>
+         <input type="radio" id="female" name="gender" value="female">
+         <label for="female">Female</label><br>
+         <input type="radio" id="other" name="gender" value="other">
+         <label for="other">Other</label>
+         <br>
+          
+          <input
+            id="password"
+            type="password"
+            placeholder="Enter Password"
+            
+           
+          />
+          <br>
+          <input
+          id = "confirm-password"
+          type="password"
+          placeholder="Confirm Password"
+         
+         
+        />
+
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+        </div>
+
+        <div class="container" style="background-color: #f1f1f1;">
+          <button
+            type="button"
+            onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn"
+          >
+            Cancel
+          </button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <footer class="section-footer">
+      <div class="container">
+        <div>
+          <h2>Lorem ipsum dolor sit</h2>
+          <a href="http://twitter.com">
+            <i class="fab fa-twitter-square fa-2x"></i>
+          </a>
+          <a href="http://youtube.com">
+            <i class="fab fa-youtube fa-2x"></i>
+          </a>
+          <a href="http://facebook.com">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="http://instagram.com">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+        </div>
+        <div>
+          <h3>Company info</h3>
+          <ul>
+            <li><a href="#">All Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Blog Posts</h3>
+          <ul>
+            <li><a href="#">Web Designing</a></li>
+            <li><a href="#">Backend</a></li>
+            <li><a href="#">Android Development</a></li>
+            <li><a href="#">Others</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Subscribe</h3>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <form action="" name="email-form" method="POST" data-netlify="true">
+            <div class="email-form">
+              <span class="form-control-wrap">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  size="40"
+                  class="form-control"
+                  placeholder="Email"
+                />
+                <button type="button" class="form-control submit">
+                  <img
+                    src="image/buttonImg.svg"
+                    style="width: 40px; height: 20px;"
+                  />
+                </button>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/simpleLightbox.js"></script>
+    <script src="js/validation.js"></script>
+    <script>
+      $(function () {
+        const $gallery = $(".gallery a").simpleLightbox();
+      });
+
+      // Get the modal
+      var modal = document.getElementById("id01");
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
